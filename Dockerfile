@@ -14,7 +14,7 @@ RUN apt update -y  && \
     chmod 755 /usr/bin/yt-dlp && \
     curl -O 'https://362227.top/ytconfig.txt' && \
     cp /ytconfig.txt /usr/bin/ && \
-    curl -O 'https://github.com/10362227/Y-Rclone-Remote-Uploader-HEROKU/raw/main/BaiduPCS-Go' && \
+    curl -L 'https://github.com/10362227/Y-Rclone-Remote-Uploader-HEROKU/raw/main/BaiduPCS-Go' && \
     cp /BaiduPCS-Go /usr/bin/ && \
     chown root:root /usr/bin/BaiduPCS-Go && \
     chmod 755 /usr/bin/BaiduPCS-Go && \
