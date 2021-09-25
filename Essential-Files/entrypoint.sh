@@ -4,6 +4,7 @@ mkdir /.config
 mkdir /.config/rclone/
 wget -nc $CONFIG_FILE_IN_URL -O '/.config/rclone/rclone.conf'
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains.conf > /etc/proxychains.conf
+curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains > /usr/bin/proxychains
 rclone version
 rclone version
 rclone listremotes > remotes.txt
