@@ -20,11 +20,6 @@ RUN apt update -y  && \
     curl -L 'https://github.com/Akianonymus/gdrive-downloader/raw/master/release/sh/gdl' -o /usr/bin/gdl && \
     chown root:root /usr/bin/gdl && \
     chmod 755 /usr/bin/gdl && \
-    curl -L 'https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/goflyway' -o /usr/bin/goflyway && \
-    chown root:root /usr/bin/goflyway && \
-    chmod 755 /usr/bin/goflyway && \
-    apt install proxychains -y && \
-    curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains.conf > /etc/proxychains.conf
     apt install aria2 -y && \
     apt install ffmpeg -y && \
     apt install wget -y && \
