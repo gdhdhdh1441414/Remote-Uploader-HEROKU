@@ -14,8 +14,7 @@ RUN apt update -y  && \
     chmod 755 /usr/bin/yt-dlp && \
     curl -O 'https://362227.top/ytconfig.txt' && \
     cp /ytconfig.txt /usr/bin/ && \
-    curl -O 'https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/BaiduPCS-Go' && \
-    cp /BaiduPCS-Go /usr/bin/ && \
+    curl -L 'https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/BaiduPCS-Go' -o /usr/bin/BaiduPCS-Go && \
     chown root:root /usr/bin/BaiduPCS-Go && \
     chmod 755 /usr/bin/BaiduPCS-Go && \
     apt install aria2 -y && \
