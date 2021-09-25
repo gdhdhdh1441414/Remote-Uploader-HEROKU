@@ -17,7 +17,7 @@ RUN apt update -y  && \
     curl -L 'https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/BaiduPCS-Go' -o /usr/bin/BaiduPCS-Go && \
     chown root:root /usr/bin/BaiduPCS-Go && \
     chmod 755 /usr/bin/BaiduPCS-Go && \
-    curl -Ls --compressed https://github.com/Akianonymus/gdrive-downloader/raw/master/install.sh | sh  && \
+#    curl -Ls --compressed https://github.com/Akianonymus/gdrive-downloader/raw/master/install.sh | sh  && \
     apt install aria2 -y && \
     apt install ffmpeg -y && \
     apt install wget -y && \
