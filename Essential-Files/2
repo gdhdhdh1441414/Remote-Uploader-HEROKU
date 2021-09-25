@@ -49,7 +49,6 @@
     "        ! export https_proxy=http://207.246.87.236:8888 \n",
     "        ! export http_proxy=http://207.246.87.236:8888 \n",
     "        ! BaiduPCS-Go login -cookies='XFT=T7BdQ2kj9qaOHLNQBzLXecEDq0NSMR1/cFI9Pg7+cP4=; XFCS=A0BAA1D3C3AFF60D8A9501F61A5316EB2F44DC96D5D069E28D965E876B51558D; BAIDUID_BFESS=1FAD127BAC0642BD179AE9232E9D3EAC:FG=1; __yjs_duid=1_b83edfa36c48d34c5d422654ad9291ff1632462458498; BAIDUID=EB8C0978CD2A3182C0C963B26A4F83BC:FG=1; BDUSS=zBnQnprSmR3c0xvSDh1Wk5vT3pkMmpSN2tTTlc4R2g1dUJKS2pKUnhpSnVGM1poRVFBQUFBJCQAAAAAABAAAAEAAAD2Tdr6REO088rlMjAxOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6KTmFuik5hN; BDUSS_BFESS=zBnQnprSmR3c0xvSDh1Wk5vT3pkMmpSN2tTTlc4R2g1dUJKS2pKUnhpSnVGM1poRVFBQUFBJCQAAAAAABAAAAEAAAD2Tdr6REO088rlMjAxOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6KTmFuik5hN; pan_login_way=1; csrfToken=Q7ezNP5m-MPzubHlXKXZKmR0; STOKEN=a035eb4833e11aabcfaf438a90d977308679fbe717aa1381ff4a276541884cbe; ZD_ENTRY=empty; PANPSC=6330118974698879948:HSTAF2XekfrDfJxofQvIR8/yqoAddd3nU4bHmv7k1lQb6OtHeDgTZITtPba1v5pWKB+Q1NY39EqaV1QHy3lx2+uwJgkIjG1NcDLxProYXAAu/GN14ZZ7XobjAuQ0lbzSIpBwzouoN4Fjy4bwAz5jQiHq5mg/cPBDsGdcW9T0tiRm65hzsZIwfARwtfBixKqXMKjxtxPUcwo='\n",    
-    "        ! proxychains4 BaiduPCS-Go upload /home/{cloudname.value} /\n",
     "        ! proxychains BaiduPCS-Go upload /home/{cloudname.value} /\n",
     "        print(f\"Your file uploaded to {cloudname.value} at {threats.value} x threads\")\n",
     "button_send.on_click(on_button_clicked)\n",
@@ -70,13 +69,13 @@
     "#text_0 = widgets.HTML(value=\"<center><h1><u>Aria2Mega</u></h1></center>\")\n",
     "text_1 = widgets.HTML(value=\"<h4>Thread or Max connection Per download</h4>\")\n",
     "line1 = widgets.HTML(value=\"<hr>\")\n",
-    "text_code= widgets.HTML(value=\"<h4>代码测试</h4>\")\n",
     "text_3a= widgets.HTML(value=\"<h4>粘贴Vimeo下载地址（Vimeo专用）</h4>\")\n",
     "text_3b= widgets.HTML(value=\"<h4>粘贴视频下载地址（YT、BBC、B站等）</h4>\")\n",
     "text_3c= widgets.HTML(value=\"<h4>粘贴谷歌网盘地址</h4>\")\n",
     "text_4= widgets.HTML(value=\"<h4>粘贴直链或者磁链</h4>\")\n",
+    "text_code= widgets.HTML(value=\"<h4>代码测试</h4>\")\n",
     "text_5= widgets.HTML(value=\"<h4>Select your Remote</h4>\")\n",
-    "vbox_text = widgets.VBox([image_headline, line1, text_code, code, line1, text_3a, torur, line1, text_3b, toru, line1, text_3c, gd, line1, text_4, toruri, line1, text_1, threats, line1, text_5, cloudname, line1,line1, vbox_result, link01])\n",
+    "vbox_text = widgets.VBox([image_headline, line1, text_3a, torur, line1, text_3b, toru, line1, text_3c, gd, line1, text_4, toruri, line1, text_code, code, line1, text_1, threats, line1, text_5, cloudname, line1,line1, vbox_result, link01])\n",
     "page = widgets.HBox([vbox_headline, vbox_text])\n",
     "display(page)"
    ]
