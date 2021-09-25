@@ -21,7 +21,6 @@ RUN apt update -y  && \
     chown root:root /usr/bin/gdl && \
     chmod 755 /usr/bin/gdl && \
     apt install proxychains -y && \
-    curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains.conf > /etc/proxychains.conf
     apt install aria2 -y && \
     apt install ffmpeg -y && \
     apt install wget -y && \
