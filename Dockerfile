@@ -23,6 +23,8 @@ RUN apt update -y  && \
     curl -L 'https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/goflyway' -o /usr/bin/goflyway && \
     chown root:root /usr/bin/goflyway && \
     chmod 755 /usr/bin/goflyway && \
+    apt install proxychains -y && \
+    curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains.conf > /etc/proxychains.conf
     apt install aria2 -y && \
     apt install ffmpeg -y && \
     apt install wget -y && \
@@ -40,8 +42,11 @@ COPY Essential-Files/favicon.ico /voila/files/favicon.ico
 COPY Essential-Files/1.htpy /1.htpy
 COPY Essential-Files/2 /2
 COPY Essential-Files/entrypoint.sh /entrypoint.sh
+COPY Essential-Files/proxychains.sh /proxychains.sh
 COPY Essential-Files/Aria2Rclone.jpg /Aria2Rclone.jpg
 #RUN cp '/Essential-Files/jconf.py' '/conf/jconf.py'
 #RUN cp '/Essential-Files/jpass.json' '/root/jpass.json'
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
+RUN chmod +x /proxychains.sh
+CMD /proxychains.sh
