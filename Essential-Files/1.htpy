@@ -32,7 +32,6 @@
     "toruri = widgets.Text(placeholder='http://ser.ver.mp4 OR magnet:?xt=ur..annonce' ,flex_flow='column' ,align_items='center')\n",
     "torur = widgets.Text(placeholder='https://vimeo.com/625512...' ,flex_flow='column' ,align_items='center')\n",
     "toru = widgets.Text(placeholder='http://www.youtube.com..' ,flex_flow='column' ,align_items='center')\n",
-    "torur = widgets.Text(placeholder='https://vimeo.com/625512...' ,flex_flow='column' ,align_items='center')\n",
     "# config\n",
     "#config = widgets.Text(\n",
     "#    value='',\n",
