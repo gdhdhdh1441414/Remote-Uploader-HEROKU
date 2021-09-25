@@ -48,5 +48,4 @@ COPY Essential-Files/Aria2Rclone.jpg /Aria2Rclone.jpg
 #RUN cp '/Essential-Files/jpass.json' '/root/jpass.json'
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
-RUN chmod +x /proxychains.sh
-CMD /proxychains.sh
+
