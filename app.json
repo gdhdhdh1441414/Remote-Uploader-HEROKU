@@ -12,7 +12,7 @@
       "description": "Please Paste your 115 json conf file in URL" ,
       "value": "https://www..../115.conf"
                   },
-     "BD_COOKIE": {
+     "BD_COOKIE_URL": {
       "description": "Please Paste your baidu cookie below." ,
       "value": "XFT=T7BdQ2kj9qaOHLNQBzLXecEDq0NSMR1/cFI9Pg7+cP4=...RwtfBixKqXMKjxtxPUcwo="
                   }
