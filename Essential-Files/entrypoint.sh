@@ -7,11 +7,11 @@ curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/prox
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains > /usr/bin/proxychains
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake115uploader > /usr/bin/fake115uploader
 curl $CONFIG_115_URL > /usr/bin/fake115uploader.json
-#curl https://362227.top/2 > /2
+curl $BD_COOKIE_URL > /2
 rclone version
 rclone version
 rclone listremotes > remotes.txt
-sed -i 's/BDCOOKIE/$BD_COOKIE/g' 2
+#sed -i 's/BDCOOKIE/$BD_COOKIE/g' 2
 sed -i 's/.$//' remotes.txt
 sed "s/[^ ][^ ]*/'&'/g" remotes.txt >remotes01.txt
 sed '$!s/$/,/' remotes01.txt >remotes02.txt
