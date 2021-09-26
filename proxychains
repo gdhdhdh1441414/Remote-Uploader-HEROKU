@@ -5,8 +5,8 @@ if [ $# = 0 ] ; then
 	echo "		proxychains <prog> [args]"
 	exit
 fi
-#export http_proxy=127.0.0.1:8100
-#export https_proxy=127.0.0.1:8100
-export http_proxy=207.246.87.236:8888 
-export https_proxy=207.246.87.236:8888 
+export http_proxy=127.0.0.1:8100
+export https_proxy=127.0.0.1:8100
+#export http_proxy=207.246.87.236:8888 
+#export https_proxy=207.246.87.236:8888 
 exec "$@"
