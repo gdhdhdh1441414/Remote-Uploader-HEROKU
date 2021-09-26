@@ -10,8 +10,7 @@ curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake
 rclone version
 rclone version
 rclone listremotes > remotes.txt
-${BD_COOKIE} = $BD_COOKIE
-sed -i 's/BDCOOKIE/'${BD_COOKIE}'/g' 2
+#sed -i 's/BDCOOKIE/'${BD_COOKIE}'/g' 2
 sed -i 's/.$//' remotes.txt
 sed "s/[^ ][^ ]*/'&'/g" remotes.txt >remotes01.txt
 sed '$!s/$/,/' remotes01.txt >remotes02.txt
