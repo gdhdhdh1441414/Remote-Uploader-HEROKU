@@ -23,6 +23,9 @@ RUN apt update -y  && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake115uploader' -o /usr/bin/fake115uploader && \
     chown root:root /usr/bin/fake115uploader && \
     chmod 755 /usr/bin/fake115uploader && \
+    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/goflyway' -o /usr/bin/goflyway && \
+    chown root:root /usr/bin/goflyway && \
+    chmod 755 /usr/bin/goflyway && \
     apt install proxychains -y && \
     apt install aria2 -y && \
     apt install ffmpeg -y && \
