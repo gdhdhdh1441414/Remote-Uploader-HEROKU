@@ -11,7 +11,7 @@ curl $CONFIG_115_URL > /usr/bin/fake115uploader.json
 rclone version
 rclone version
 rclone listremotes > remotes.txt
-#sed -i 's/BDCOOKIE/'${BD_COOKIE}'/g' 2
+sed -i 's/BDCOOKIE/$BD_COOKIE/g' 2
 sed -i 's/.$//' remotes.txt
 sed "s/[^ ][^ ]*/'&'/g" remotes.txt >remotes01.txt
 sed '$!s/$/,/' remotes01.txt >remotes02.txt
