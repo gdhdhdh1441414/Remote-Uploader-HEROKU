@@ -44,4 +44,4 @@
     "#)\n",
     "\n",
     "cloudname = widgets.Dropdown(\n",
-    "    options=['请选择',\n",
+    "    options=['selectone',\n",
