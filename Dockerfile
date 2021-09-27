@@ -26,7 +26,9 @@ RUN apt update -y  && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/goflyway' -o /usr/bin/goflyway && \
     chown root:root /usr/bin/goflyway && \
     chmod 755 /usr/bin/goflyway && \
-    apt install proxychains -y && \
+    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains' -o /usr/bin/proxychains && \
+    chown root:root /usr/bin/proxychains && \
+    chmod 755 /usr/bin/proxychains && \
     apt install screen -y && \
     apt install aria2 -y && \
     apt install ffmpeg -y && \
