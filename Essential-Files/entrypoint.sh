@@ -6,7 +6,6 @@ wget -nc $CONFIG_FILE_IN_URL -O '/.config/rclone/rclone.conf'
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains.conf > /etc/proxychains.conf
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains > /usr/bin/proxychains
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake115uploader > /usr/bin/fake115uploader
-curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/run.sh > /usr/bin/run.sh
 curl $CONFIG_115_URL > /usr/bin/fake115uploader.json
 curl $BD_COOKIE_URL > /2
 rclone version
