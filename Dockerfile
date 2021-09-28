@@ -27,6 +27,9 @@ RUN apt update -y  && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/goflyway' -o /usr/bin/goflyway && \
     chown root:root /usr/bin/goflyway && \
     chmod 755 /usr/bin/goflyway && \
+    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/run.sh' -o /usr/bin/run.sh && \
+    chown root:root /usr/bin/run.sh && \
+    chmod 755 /usr/bin/goflyway && \
     apt install proxychains -y && \
     apt install screen -y && \
     apt install aria2 -y && \
