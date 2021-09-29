@@ -35,6 +35,7 @@
     "toru = widgets.Text(placeholder='http://www.youtube.com..' ,flex_flow='column' ,align_items='center')\n",
     "gd = widgets.Text(placeholder='http://drive.google.com..' ,flex_flow='column' ,align_items='center')\n",
     "ytc = widgets.Text(placeholder='额外参数' ,flex_flow='column' ,align_items='center')\n",
+    "mega = widgets.Text(placeholder='http://https://mega.nz/file/dEN4a..' ,flex_flow='column' ,align_items='center')\n",
     "# config\n",
     "#config = widgets.Text(\n",
     "#    value='',\n",
