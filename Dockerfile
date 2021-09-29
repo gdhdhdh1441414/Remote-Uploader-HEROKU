@@ -31,6 +31,7 @@ RUN apt update -y  && \
     chown root:root /usr/bin/run.sh && \
     chmod 755 /usr/bin/goflyway && \
     apt install proxychains -y && \
+    apt install megatools -y && \
     apt install screen -y && \
     apt install aria2 -y && \
     apt install ffmpeg -y && \
