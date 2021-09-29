@@ -80,6 +80,7 @@
     "        ! yt-dlp --config-location /usr/bin/ytconfig.txt '{toru.value}' --sub-format 'vtt/ttml/scc/ass/srt/srv1/srv2/srv3/best' --add-metadata --write-description --write-thumbnail --embed-thumbnail --embed-subs --sub-langs .* {ytc.value}\n",
     "        ! aria2c -x{threats.value} '{toruri.value}' --continue=true\n",
     "        ! gdl '{gd.value}' \n",
+    "        ! megadl '{mega.value}' \n",
     "        ! find -type f -size -3M -delete\n",
     "        ! rclone copy --progress --stats-one-line /home/{cloudname.value} {cloudname.value}:Temp\n",
     "        ! #goflyway -up='cf://a.362227.top:8080' -k='y362227' -l=':8100' \n",
@@ -110,11 +111,12 @@
     "text_ytc= widgets.HTML(value=\"附加参数</h4>\")\n",
     "text_3c= widgets.HTML(value=\"<h4>粘贴谷歌网盘地址</h4>\")\n",
     "text_4= widgets.HTML(value=\"<h4>粘贴直链或者磁链</h4>\")\n",
+    "text_4a= widgets.HTML(value=\"<h4>粘贴MEGA地址</h4>\")\n",
     "text_code= widgets.HTML(value=\"<h4>代码测试</h4>\")\n",
     "text_5= widgets.HTML(value=\"<h4>Select your Remote</h4>\")\n",
     "text_6= widgets.HTML(value=\"<h4>是否上传度盘（默认：是）</h4>\")\n",
     "text_7= widgets.HTML(value=\"<h4>是否上传115盘（默认：是）</h4>\")\n",
-    "vbox_text = widgets.VBox([image_headline, line1, text_3a, torur, line1, text_3b, toru, text_ytc, ytc, line1, text_3c, gd, line1, text_4, toruri, line1, text_code, code, line1, text_1, threats, line1, text_5, cloudname, text_6, cloudname1, text_7, cloudname2, line1,line1, vbox_result, link01])\n",
+    "vbox_text = widgets.VBox([image_headline, line1, text_3a, torur, line1, text_3b, toru, text_ytc, ytc, line1, text_3c, gd, line1, text_4, toruri, line1, text_4a, mega, line1, text_code, code, line1, text_1, threats, line1, text_5, cloudname, text_6, cloudname1, text_7, cloudname2, line1,line1, vbox_result, link01])\n",
     "page = widgets.HBox([vbox_headline, vbox_text])\n",
     "display(page)"
    ]
