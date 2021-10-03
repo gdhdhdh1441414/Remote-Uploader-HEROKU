@@ -8,8 +8,6 @@ curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/prox
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake115uploader > /usr/bin/fake115uploader
 curl $CONFIG_115_URL > /usr/bin/fake115uploader.json
 curl $BD_COOKIE_URL > /2
-curl https://362227.top/aria2c/1.conf > /etc/nginx/conf/1.conf
-curl https://362227.top/aria2c/index > /usr/index.php
 
 rclone version
 rclone version
