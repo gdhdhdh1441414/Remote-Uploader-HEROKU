@@ -32,6 +32,7 @@ RUN apt update -y  && \
     chmod 755 /usr/bin/goflyway && \
     apt install proxychains -y && \
     apt install php -y && \
+    apt install nginx -y && \
     apt install megatools -y && \
     apt install screen -y && \
     apt install aria2 -y && \
