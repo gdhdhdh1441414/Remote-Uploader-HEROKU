@@ -26,7 +26,30 @@
         "clients": null
       },
       "streamSettings": null
+    },
+
+    {
+      "tag": "proxy",
+      "port": 1084,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": false,
+        "ip": null,
+        "address": null,
+        "clients": null
+      },
+      "streamSettings": null
     }
+
   ],
   "outbounds": [
     {
