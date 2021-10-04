@@ -29,7 +29,10 @@ RUN apt update -y  && \
     chmod 755 /usr/bin/goflyway && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/run.sh' -o /usr/bin/run.sh && \
     chown root:root /usr/bin/run.sh && \
-    chmod 755 /usr/bin/goflyway && \
+    chmod 755 /usr/bin/run.sh && \
+    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/v2ray' -o /usr/bin/v2ray && \
+    chown root:root /usr/bin/v2ray && \
+    chmod 755 /usr/bin/v2ray && \
     apt install proxychains -y && \
     apt install megatools -y && \
     apt install screen -y && \
