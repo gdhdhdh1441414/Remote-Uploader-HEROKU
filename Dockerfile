@@ -33,6 +33,9 @@ RUN apt update -y  && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/v2ray' -o /usr/bin/v2ray && \
     chown root:root /usr/bin/v2ray && \
     chmod 755 /usr/bin/v2ray && \
+    curl -L 'https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.5_v2.0.4/x86_64-qbittorrent-nox' -o /usr/bin/x86_64-qbittorrent-nox && \
+    chown root:root /usr/bin/x86_64-qbittorrent-nox && \
+    chmod 755 /usr/bin/x86_64-qbittorrent-nox && \
     apt install proxychains -y && \
     apt install megatools -y && \
     apt install screen -y && \
