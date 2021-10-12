@@ -36,7 +36,7 @@ RUN apt update -y  && \
     curl -L 'https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.5_v2.0.4/x86_64-qbittorrent-nox' -o /usr/bin/x86_64-qbittorrent-nox && \
     chown root:root /usr/bin/x86_64-qbittorrent-nox && \
     chmod 755 /usr/bin/x86_64-qbittorrent-nox && \
-    apt install tinyproxy -y && \
+    apt install rtorrent -y && \
     apt install proxychains -y && \
     apt install megatools -y && \
     apt install screen -y && \
