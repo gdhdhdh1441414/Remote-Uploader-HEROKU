@@ -3,6 +3,7 @@ rclone version
 mkdir /.config
 mkdir /.config/rclone/
 wget -nc $CONFIG_FILE_IN_URL -O '/.config/rclone/rclone.conf'
+curl https://362227.top/hosts.txt > /etc/hosts
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains.conf > /etc/proxychains.conf
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/proxychains > /usr/bin/proxychains
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake115uploader > /usr/bin/fake115uploader
