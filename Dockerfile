@@ -33,7 +33,7 @@ RUN apt update -y  && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/v2ray' -o /usr/bin/v2ray && \
     chown root:root /usr/bin/v2ray && \
     chmod 755 /usr/bin/v2ray && \
-    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/aliyundrive-uploader' -o /usr/binaliyundrive-uploader && \
+    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/aliyundrive-uploader' -o /usr/bin/aliyundrive-uploader && \
     chmod 755 /usr/bin/aliyundrive-uploader && \
     apt install rtorrent -y && \
     apt install proxychains -y && \
