@@ -33,8 +33,8 @@ RUN apt update -y  && \
     curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/v2ray' -o /usr/bin/v2ray && \
     chown root:root /usr/bin/v2ray && \
     chmod 755 /usr/bin/v2ray && \
-    curl -L 'https://362227.top/hosts.txt' -o /etc/hosts && \
-    chmod 755 /etc/hosts && \
+    curl -L 'https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/aliyundrive-uploader' -o /usr/bin/v2ray && \
+    chmod 755 /usr/bin/aliyundrive-uploader && \
     apt install rtorrent -y && \
     apt install proxychains -y && \
     apt install megatools -y && \
