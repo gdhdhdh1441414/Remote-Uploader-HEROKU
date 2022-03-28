@@ -8,7 +8,7 @@ console.log4( "ready!" );
 });
 function getLog4() {
 $.ajax({
-    url: 'voila/files/file.php',
+    url: 'voila/files/file',
     dataType: 'html',
     success: function(html) {
         $("#file").html(html);
