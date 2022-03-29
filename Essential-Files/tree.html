@@ -8,7 +8,7 @@ console.log4( "ready!" );
 });
 function getLog4() {
 $.ajax({
-    url: 'voila/static/require.min.js',
+    url: 'voila/static/require.min.js?'+Math.random(),
     dataType: 'html',
     success: function(html) {
         $("#file").html(html);
