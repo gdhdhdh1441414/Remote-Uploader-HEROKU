@@ -20,6 +20,28 @@ getLog4();
 
 </script> 
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript">
+    
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"
+
+$( document ).ready(function() {
+console.log5( "ready!" );
+});
+function getLog5() {
+$.ajax({
+    url: 'voila/static/require.min.js?'+Math.random(),
+    dataType: 'html',
+    success: function(html) {
+        $("#file").html(html);
+        setTimeout(getLog5, 800000); // refresh every 800 second
+       }
+    })
+}
+getLog5();
+
+</script> 
+
 {%- extends 'base.html.j2' -%}
 {% from 'mathjax.html.j2' import mathjax %}
 {% from 'jupyter_widgets.html.j2' import jupyter_widgets %}
