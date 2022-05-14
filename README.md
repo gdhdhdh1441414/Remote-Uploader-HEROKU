@@ -6,7 +6,7 @@
 ## This repo still need Bugfix Follow me V1.10 stable coming soon..
 Heroku oneclick / Rapid deploy method available
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/10362227/Remote-Uploader-HEROKU)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/gdhdhdh1441414/Remote-Uploader-HEROKU)
 
 ###### Star my Repository & Support me
 
