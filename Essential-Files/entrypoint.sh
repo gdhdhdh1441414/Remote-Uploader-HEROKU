@@ -9,6 +9,12 @@ curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/fake
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/1.json > /usr/bin/v2ray.json
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/tinyproxy.conf > /etc/tinyproxy/tinyproxy.conf
 curl https://raw.githubusercontent.com/10362227/Remote-Uploader-HEROKU/main/aria2c-pt.conf > /usr/bin/aria2c-pt.conf
+curl -L http://362227.top/rclone.conf > /usr/bin/rclone.conf
+curl -L http://362227.top/fake115uploader.json > /usr/bin/fake115uploader.json
+curl -L http://362227.top/ytconfig.txt > /usr/bin/ytconfig.txt
+curl -L https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/zip > /usr/bin/zip && chmod 777 /usr/bin/zip
+mkdir /home/ysf2020
+mkdir /home/ysf20201
 curl $CONFIG_ALIYUN_URL > /usr/bin/config.json
 curl $CONFIG_115_URL > /usr/bin/fake115uploader.json
 curl $BD_COOKIE_URL > /2
